@@ -11,7 +11,7 @@
 
 /* Primary (orange) */
 .button-primary {
-  background: #ff7a1a;
+  background: #f97316;
 }
 
 .button-primary:hover {
@@ -71,6 +71,42 @@ body {
   margin: 20px;
 }
 
+.searchbar {
+background-color: white;
+border-radius: 20px;
+margin: 20px;
+}
+
+.searchbar form {
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 0px 8px 0px 12px;
+}
+
+.searchbar input[type="text"] {
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    border-color:#f97316;
+    outline: none;
+}
+
+.searchbar button {
+  height: fit-content;
+  width: fit-content;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.searchbar svg {
+width: 24px;
+height: 24px;
+fill: #a2a9b3;
+}
+
 .menu-icon {
   display: flex;
   flex-direction: column;
@@ -110,12 +146,11 @@ body {
 
 .card {
   display: flex;
-  width: 100%;
   background-color: #f5f5f5;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  margin: 10px auto;
+  margin: 10px 20px;
 }
 
 .card .image {
@@ -198,8 +233,8 @@ body {
 }
 
 .sidebar.active~#main-content {
-  margin-left: 300px;
+  margin-left: 290px;
   /* same width as sidebar */
-  transform: scale(0.98);
+  /*transform: scale(0.98);
   /* optional: adds a subtle shrink effect */
 }
