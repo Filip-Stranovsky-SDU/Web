@@ -227,11 +227,19 @@ fill: #a2a9b3;
   font-weight: bold;
 }
 
+.sidebar-links a:hover {
+  color: #be5910ff;
+}
+
+
+
 
 #main-content {
   transition: margin-left 0.3s ease, transform 0.3s ease;
 }
 
+
+#sidebar-container:has(.sidebar.active)~#main-content,
 .sidebar.active~#main-content {
   margin-left: 290px;
   /* same width as sidebar */
