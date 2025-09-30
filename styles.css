@@ -95,7 +95,7 @@ stroke-width: 2;
 }
 
 .card .image {
-  width: 100%;
+  width: 30%;
   object-fit: cover;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
