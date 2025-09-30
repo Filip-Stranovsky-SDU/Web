@@ -5,48 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Info - Board Games Library</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-
-
     <!-- Sidebar -->
-    <div id="sidebar" class="sidebar">
-        <div class="sidebar-header">
-            <h2>Menu</h2>
-        </div>
-        <ul class="sidebar-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="account.html">Account</a></li>
-            <li><a href="library.html">Library</a></li>
-            <li><a href="settings.html">Settings</a></li>
-        </ul>
-    </div>
+    <div id="sidebar-container"></div>
 
 
     <div id="main-content">
 
         <!-- Navigation Bar -->
-        <div class="navbar">
-            <div class="menu-icon" onclick="toggleSidebar()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <h1 class="site-title">
-                <a href="index.html" class="site-title__link">
-                    Borrowing Board games Bureau
-                </a>
-            </h1>
-            <div class="login">
-                <svg viewBox="0 0 24 24">
-                    <circle cx="12" cy="8" r="4" />
-                    <path d="M4 20c0-4 4-6 8-6s8 2 8 6" />
-                </svg>
-                <span>Login</span>
-            </div>
-        </div>
+        <div id="navbar-container"></div>
 
         <!-- User Stats Section -->
         <div
@@ -72,12 +42,12 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Add more cards below as needed -->
         </div>
 
     </div>
+
     <script src="js/sidebar.js"></script>
+    <script src="js/componentsLoader.js"></script>
 
 </body>
 

@@ -192,11 +192,19 @@ body {
   font-weight: bold;
 }
 
+.sidebar-links a:hover {
+  color: #be5910ff;
+}
+
+
+
 
 #main-content {
   transition: margin-left 0.3s ease, transform 0.3s ease;
 }
 
+
+#sidebar-container:has(.sidebar.active)~#main-content,
 .sidebar.active~#main-content {
   margin-left: 300px;
   /* same width as sidebar */
