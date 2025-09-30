@@ -13,15 +13,37 @@
 .button-primary {
   background: #ff7a1a;
 }
+
 .button-primary:hover {
   background: #a2a9b3;
 }
+
 .button-primary:active {
 
   background: #151b24;
   transform: scale(0.96);
 }
 
+.site-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.site-title__link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-title__link:hover {
+  opacity: .9;
+}
+
+.site-title__link:focus-visible {
+  outline: 2px solid #f97316;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
 
 
 /* Disabled (gray) */
@@ -32,56 +54,58 @@
 }
 
 body {
-margin: 0;
-background-color: #555; /* page background similar to your gray */
-font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #555;
+  /* page background similar to your gray */
+  font-family: Arial, sans-serif;
 }
 
 .navbar {
-display: flex;
-align-items: center;
-justify-content: space-between;
-background-color: #1f2937; /* bluish bar */
-padding: 10px 20px;
-border-radius: 10px;
-margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f2937;
+  /* bluish bar */
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 20px;
 }
 
 .menu-icon {
-display: flex;
-flex-direction: column;
-gap: 4px;
-cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
 }
 
 .menu-icon span {
-display: block;
-width: 25px;
-height: 3px;
-background-color: #f97316;
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #f97316;
 }
 
 .logo {
-color: white;
-font-weight: bold;
-font-size: 24px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .login {
-display: flex;
-align-items: center;
-gap: 8px;
-color: #f97316;
-cursor: pointer;
-font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #f97316;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .login svg {
-width: 24px;
-height: 24px;
-stroke: white;
-fill: none;
-stroke-width: 2;
+  width: 24px;
+  height: 24px;
+  stroke: white;
+  fill: none;
+  stroke-width: 2;
 }
 
 .card {
@@ -137,7 +161,7 @@ stroke-width: 2;
   background-color: #1f2937;
   color: white;
   padding: 20px;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
   transition: left 0.3s ease;
   z-index: 1000;
 }
@@ -173,7 +197,9 @@ stroke-width: 2;
   transition: margin-left 0.3s ease, transform 0.3s ease;
 }
 
-.sidebar.active ~ #main-content {
-  margin-left: 300px; /* same width as sidebar */
-  transform: scale(0.98); /* optional: adds a subtle shrink effect */
+.sidebar.active~#main-content {
+  margin-left: 300px;
+  /* same width as sidebar */
+  transform: scale(0.98);
+  /* optional: adds a subtle shrink effect */
 }
