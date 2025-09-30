@@ -8,46 +8,66 @@
 </head>
 <body>
 
-  <!-- Navigation Bar -->
-  <div class="navbar">
-    <div class="menu-icon">
-      <span></span>
-      <span></span>
-      <span></span>
+
+        <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+        <h2>Menu</h2>
     </div>
-    <div class="logo">Board Games Library</div>
-    <div class="login">
-      <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
-      <span>Login</span>
+    <ul class="sidebar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="account.html">Account</a></li>
+        <li><a href="library.html">Library</a></li>
+        <li><a href="settings.html">Settings</a></li>
+    </ul>
     </div>
-  </div>
 
-  <!-- User Stats Section -->
-  <div style="margin: 20px; background-color: #f5f5f5; border-radius: 10px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <h2 style="color: #333;">User Information</h2>
-    <p><strong>Username:</strong> boardgamefan42</p>
-    <p><strong>Email:</strong> fan42@gamesmail.com</p>
-    <p><strong>Number of Borrowed Games:</strong> 3</p>
-  </div>
 
-  <!-- Current Borrowed Games Section -->
-  <div style="margin: 20px;">
-    <h2 style="color: #f97316;">Currently Borrowed Games</h2>
+    <div id="main-content">
 
-    <!-- Game Card -->
-    <div class="card">
-      <img src="your-image.jpg" alt="Game Cover" class="image" />
-      <div class="content">
-        <h1>Game Title</h1>
-        <p>This is a short description of the game. You can customize this text for each card.</p>
-        <div class="button-container">
-          <button class="button button-primary">Return</button>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
         </div>
-      </div>
+        <div class="logo">Borrowing Board games Bureau</div>
+        <div class="login">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg>
+        <span>Login</span>
+        </div>
     </div>
 
-    <!-- Add more cards below as needed -->
-  </div>
+    <!-- User Stats Section -->
+    <div style="margin: 20px; background-color: #f5f5f5; border-radius: 10px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <h2 style="color: #333;">User Information</h2>
+        <p><strong>Username:</strong> boardgamefan42</p>
+        <p><strong>Email:</strong> fan42@gamesmail.com</p>
+        <p><strong>Number of Borrowed Games:</strong> 3</p>
+    </div>
+
+    <!-- Current Borrowed Games Section -->
+    <div style="margin: 20px;">
+        <h2 style="color: #f97316;">Currently Borrowed Games</h2>
+
+        <!-- Game Card -->
+        <div class="card">
+        <img src="your-image.jpg" alt="Game Cover" class="image" />
+        <div class="content">
+            <h1>Game Title</h1>
+            <p>This is a short description of the game. You can customize this text for each card.</p>
+            <div class="button-container">
+            <button class="button button-primary">Return</button>
+            </div>
+        </div>
+        </div>
+
+        <!-- Add more cards below as needed -->
+    </div>
+    
+    </div>
+    <script src="js/sidebar.js"></script>
 
 </body>
 </html>
