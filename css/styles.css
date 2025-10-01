@@ -1,3 +1,10 @@
+/* You can uncomment the following to have a visual representations of the border and spacing*/
+/* * {
+  outline-style: solid;
+  outline-color: rgba(128, 248, 0, 0.42);
+  outline-width: 0.5px;
+} */
+
 /* Base button style */
 .button {
   border: none;
@@ -58,9 +65,18 @@ body {
   background-color: #555;
   /* page background similar to your gray */
   font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.navbar {
+#footer-container {
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.navbar,
+footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -72,25 +88,25 @@ body {
 }
 
 .searchbar {
-background-color: white;
-border-radius: 20px;
-margin: 20px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 20px;
 }
 
 .searchbar form {
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: space-between;
   padding: 0px 8px 0px 12px;
 }
 
 .searchbar input[type="text"] {
-    border-radius: 5px;
-    border: none;
-    font-size: 16px;
-    width: 100%;
-    border-color:#f97316;
-    outline: none;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  border-color: #f97316;
+  outline: none;
 }
 
 .searchbar button {
@@ -102,9 +118,9 @@ margin: 20px;
 }
 
 .searchbar svg {
-width: 24px;
-height: 24px;
-fill: #a2a9b3;
+  width: 24px;
+  height: 24px;
+  fill: #a2a9b3;
 }
 
 .menu-icon {
@@ -154,7 +170,7 @@ fill: #a2a9b3;
 }
 
 #accountcard {
-  margin:20px
+  margin: 20px
 }
 
 .card .image {
@@ -215,30 +231,34 @@ fill: #a2a9b3;
   align-items: center;
 }
 
-.sidebar-links {
+.sidebar-links,
+footer li {
   list-style: none;
   padding: 0;
   margin-top: 20px;
 }
 
-.sidebar-links li {
+.sidebar-links li,
+footer li {
   margin: 15px 0;
 }
 
-.sidebar-links a {
+.sidebar-links a,
+footer a {
   color: #f97316;
   text-decoration: none;
   font-weight: bold;
 }
 
-.sidebar-links a:hover {
-  color: #f97316;
+.sidebar-links a:hover,
+footer a:hover {
+  color: #bd5d18ff;
 }
 
 .scroll-container {
   padding: 20px;
   margin: 0px 20px;
-  background:#1f2937;
+  background: #1f2937;
   border-radius: 15px;
 }
 
@@ -247,7 +267,8 @@ fill: #a2a9b3;
   height: 50%; */
   /*margin:20px 20px 0px 20px;'*/
   padding: 0px 10px 0px 0px;
-  max-height: 73vh;  /* example */
+  max-height: 73vh;
+  /* example */
   overflow-y: auto;
   display: grid;
   row-gap: 10px;
@@ -259,7 +280,16 @@ fill: #a2a9b3;
 }
 
 #main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* flex-flow: row wrap; */
+  /* height: 100vh; */
   transition: margin-left 0.3s ease, transform 0.3s ease;
+}
+
+#indexmain {
+  flex: 1;
 }
 
 

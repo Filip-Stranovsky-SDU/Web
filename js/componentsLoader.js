@@ -10,5 +10,5 @@ function fetch_insert(path, id) {
 document.addEventListener('DOMContentLoaded', function() {
     fetch_insert('components/navbar.html', 'navbar-container');
     fetch_insert('components/sidebar.html', 'sidebar-container');
-    fetch_insert('components/card.html', 'card');
+    fetch_insert('components/footer.html', 'footer-container');
 });
