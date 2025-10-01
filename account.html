@@ -10,41 +10,39 @@
 
 <body>
     <!-- Sidebar -->
-    <div id="sidebar-container"></div>
+    <nav id="sidebar-container"></nav>
 
 
-    <div id="main-content">
+    <main id="main-content">
 
         <!-- Navigation Bar -->
-        <div id="navbar-container"></div>
+        <header id="navbar-container"></header>
 
         <!-- User Stats Section -->
-        <div
+        <section
             style="margin: 20px; background-color: #f5f5f5; border-radius: 10px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
             <h2 style="color: #333;">User Information</h2>
             <p><strong>Username:</strong> boardgamefan42</p>
             <p><strong>Email:</strong> fan42@gamesmail.com</p>
             <p><strong>Number of Borrowed Games:</strong> 3</p>
-        </div>
+        </section>
 
         <!-- Current Borrowed Games Section -->
-        <div>
-            <h2 style="color: #f97316; margin: 20px;">Currently Borrowed Games</h2>
+        <h2 style="color: #f97316; margin: 20px;">Currently Borrowed Games</h2>
 
             <!-- Game Card -->
-            <div class="card" id="accountcard">
-                <img src="your-image.jpg" alt="Game Cover" class="image" />
-                <div class="content">
-                    <h1>Game Title</h1>
+            <li class="card" id="accountcard">
+                <img class="images" src="Images/catan.png" alt="Catan board game package"> 
+                <article class="content">
+                    <h1>Catan</h1>
                     <p>This is a short description of the game. You can customize this text for each card.</p>
-                    <div class="button-container">
-                        <button class="button button-primary">Return</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    <footer class="button-container">
+                        <button class="button button-primary">Borrow</button>
+                    </footer>
+                </article>
+            </li>
 
-    </div>
+    </main>
 
     <script src="js/sidebar.js"></script>
     <script src="js/componentsLoader.js"></script>
