@@ -246,3 +246,8 @@ fill: #a2a9b3;
   /*transform: scale(0.98);
   /* optional: adds a subtle shrink effect */
 }
+
+.images {
+  width: auto;
+  height: 200px;
+}
