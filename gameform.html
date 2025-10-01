@@ -1,18 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Game Uploading Form - BBB</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/x-icon" href="/Images/logo.png">
 </head>
+
 <body>
   <!-- Sidebar -->
   <nav id="sidebar-container"></nav>
 
   <main id="main-content">
-    <!-- Navigation bar -->
-    <header id="navbar-container"></header>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <div class="menu-icon" onclick="toggleSidebar()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h1 class="site-title">
+        <a href="index.html" class="site-title__link">
+          BBB
+        </a>
+      </h1>
+      <div class="login" onclick="window.location.href='index.html'">
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="8" r="4" />
+          <path d="M4 20c0-4 4-6 8-6s8 2 8 6" />
+        </svg>
+        <span>Log Out</span>
+      </div>
+    </header>
 
     <!-- Game Uploading Form -->
     <h2 style="color:#f97316; margin:20px;">Game Uploading Form</h2>
@@ -38,7 +59,7 @@
         </section>
 
         <button type="submit"
-                style="background:#f97316; color:#fff; border:none; border-radius:8px; padding:10px 20px; font-weight:bold; cursor:pointer;">
+          style="background:#f97316; color:#fff; border:none; border-radius:8px; padding:10px 20px; font-weight:bold; cursor:pointer;">
           Upload Game
         </button>
     </form>
@@ -47,4 +68,5 @@
   <script src="js/sidebar.js"></script>
   <script src="js/componentsLoader.js"></script>
 </body>
+
 </html>
