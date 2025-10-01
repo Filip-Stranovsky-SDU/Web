@@ -166,7 +166,7 @@ footer {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  /*margin: 0px 0px 10px 0px;*/
+  margin: 0px 0px 10px 0px;
 }
 
 #accountcard {
@@ -267,11 +267,9 @@ footer a:hover {
   height: 50%; */
   /*margin:20px 20px 0px 20px;'*/
   padding: 0px 10px 0px 0px;
-  max-height: 73vh;
+  height: 73vh;
   /* example */
   overflow-y: auto;
-  display: grid;
-  row-gap: 10px;
   margin: 0px;
 }
 
