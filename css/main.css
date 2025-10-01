@@ -1,0 +1,14 @@
+/* You can uncomment the following to have a visual representations of the border and spacing*/
+/* * {
+  outline-style: solid;
+  outline-color: rgba(128, 248, 0, 0.42);
+  outline-width: 0.5px;
+} */
+
+:root {
+    --bright-blue: #c8d9f6ff;
+    --bright-blue-2: #cbd5e1;
+    --accent-purple: #4f46e5;
+    --accent-purple-hover: #6366f1;
+    --accent-orange: #f97316;
+}
