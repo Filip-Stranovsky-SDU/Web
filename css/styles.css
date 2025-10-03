@@ -1,8 +1,8 @@
 /* Base button*/
 .button {
   border: none;
-  border-radius: 25px;
-  padding: 10px 20px;
+  border-radius: var(--border-radius-2x1);
+  padding: var(--padding-xs) var(--gap-xl);
   font-weight: var(--font-weight-bold);
   color: var(--white);
   cursor: pointer;
@@ -24,8 +24,8 @@
 }
 
 .site-title {
-  font-size: 24px;
-  margin: 0;
+  font-size: var(--font-size-2xl);
+  margin: var(--margin-none);
 }
 
 .site-title__link {
@@ -41,7 +41,7 @@
 .site-title__link:focus-visible {
   outline: 2px solid var(--orange-500);
   outline-offset: 2px;
-  border-radius: 4px;
+  border-radius: var(--border-radius-xs);
 }
 
 
@@ -52,7 +52,7 @@
 }
 
 body {
-  margin: 0;
+  margin: var(--margin-none);
   background-color: var(--gray-600);
   min-height: 100vh;
   display: flex;
@@ -61,7 +61,7 @@ body {
 
 #footer-container {
   margin-top: auto;
-  margin-bottom: 10px;
+  margin-bottom: var(--margin-sm);
 }
 
 .navbar,
@@ -70,15 +70,15 @@ footer {
   align-items: center;
   justify-content: space-between;
   background-color: var(--gray-800);
-  padding: 10px 20px;
-  border-radius: 10px;
-  margin: 20px;
+  padding: var(--padding-xs) var(--gap-xl);
+  border-radius: var(--border-radius-lg);
+  margin: var(--margin-lg);
 }
 
 .searchbar {
   background-color: var(--white);
-  border-radius: 20px;
-  margin: 20px;
+  border-radius: var(--border-radius-2x1);
+  margin: var(--margin-lg);
 }
 
 .searchbar form {
@@ -89,9 +89,9 @@ footer {
 }
 
 .searchbar input[type="text"] {
-  border-radius: 5px;
+  border-radius: var(--border-radius-sm);
   border: none;
-  font-size: 16px;
+  font-size: var(--font-size-base);
   width: 100%;
   border-color: var(--orange-500);
   outline: none;
@@ -114,7 +114,7 @@ footer {
 .menu-icon {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: var(--gap-xs);
   cursor: pointer;
 }
 
@@ -128,13 +128,13 @@ footer {
 .logo {
   color: var(--white);
   font-weight: var(--font-weight-bold);
-  font-size: 24px;
+  font-size: var(--font-size-2xl);
 }
 
 .login {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--gap-sm);
   color: var(--orange-500);
   cursor: pointer;
   font-weight: bold;
@@ -151,10 +151,11 @@ footer {
 .card {
   display: flex;
   background-color: var(--gray-100);
-  border-radius: 10px;
+  border-radius: var(--border-radius-lg);
   box-shadow: 0 2px 8px #0000001a;
   overflow: hidden;
-  margin: 0px 0px 10px 0px;
+  margin: var(--margin-none);
+  margin-bottom: var(--margin-md);
 }
 
 #accountcard {
@@ -172,18 +173,18 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 8px;
+  padding: var(--gap-sm);
   flex: 1;
 }
 
 .card .content h1 {
-  font-size: 1.2rem;
-  margin: 0;
+  font-size: var(--font-size-base);
+  margin: var(--margin-none);
   color: var(--gray-800);
 }
 
 .card .content p {
-  font-size: 1rem;
+  font-size: var(--font-size-base);
   color: var(--gray-600);
   margin: 2px 0;
 }
@@ -202,7 +203,7 @@ footer {
   height: 100%;
   background-color: var(--gray-800);
   color: var(--white);
-  padding: 20px;
+  padding: var(--padding-lg);
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
   transition: left 0.3s ease;
   z-index: 1000;
@@ -220,7 +221,7 @@ footer {
 
 .sidebar-links {
   list-style: none;
-  padding: 0;
+  padding: var(--padding-none);
   margin-top: 20px;
 }
 
@@ -239,20 +240,21 @@ footer {
 }
 
 .scroll-container {
-  padding: 20px;
+  padding: var(--padding-md);
   margin: 0px 20px;
   background: var(--gray-800);
-  border-radius: 15px;
+  border-radius: var(--border-radius-lg);
 }
 
 .scrolloverflow {
   /* overflow:auto;
   height: 50%; */
   /*margin:20px 20px 0px 20px;'*/
-  padding: 0px 10px 0px 0px;
+  padding: var(--padding-none);
+  padding-right: var(--padding-xs);
   height: 73vh;
   overflow-y: auto;
-  margin: 0px;
+  margin: var(--margin-none);
 }
 
 .scrolloverflow ::-webkit-scrollbar {
@@ -283,4 +285,62 @@ footer {
 .images {
   width: auto;
   height: 170px;
+}
+
+/* Account page */
+.user-info-container {
+  margin: var(--margin-lg);
+  background-color: var(--gray-50);
+  border-radius: var(--border-radius-lg);
+  padding: var(--padding-md);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-info-title {
+  margin-top: var(--margin-none);
+  color: var(--gray-600);
+}
+
+.user-info-container p {
+  margin-left: var(--margin-xl);
+  color: var(--gray-800);
+}
+
+.borrowed-title {
+  color: var(--gray-300);
+  margin: var(--margin-lg);
+  margin-bottom: var(--margin-none);
+}
+
+/* Game form */
+.game-upload-page-title {
+  color: var(--gray-300);
+  margin: var(--margin-lg);
+  margin-bottom: var(--margin-none);
+}
+
+.game-upload-form {
+  margin: var(--margin-lg);
+  background: var(--gray-50);
+  border-radius: var(--border-radius-lg);
+  padding: 20px 40px 20px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+}
+
+.game-upload-form section {
+  margin-bottom: var(--margin-sm);
+}
+
+.game-upload-form input,
+.game-upload-form textarea {
+  width: 100%;
+  padding: var(--padding-xs);
+  border: 1px solid #ccc;
+  background: var(--white);
+  border-radius: var(--border-radius-xs);
+  outline-color: #f97316;
+}
+
+.game-upload-form textarea {
+  resize: vertical;
 }

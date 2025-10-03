@@ -53,15 +53,22 @@
 
   /* Font properties */
   /* Sizes */
+  /* 12px */
   --font-size-xs: 0.75rem;
+  /* 14px */
   --font-size-sm: 0.875rem;
+  /* 16px */
   --font-size-base: 1rem;
+  /* 18px */
   --font-size-lg: 1.125rem;
+  /* 20px */
   --font-size-xl: 1.25rem;
+  /* 24px */
   --font-size-2xl: 1.5rem;
 
   /* Weights */
   --font-weight-thin: 100;
+  --font-weight-light: 200;
   --font-weight-normal: 400;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
@@ -74,17 +81,23 @@
 
   /* Spacing */
   /* Gaps */
+  /* 4px */
   --gap-xs: 0.25rem;
+  /* 8px */
   --gap-sm: 0.5rem;
+  /* 12px */
   --gap-md: 0.75rem;
+  /* 16px */
   --gap-lg: 1rem;
+  /* 24px */
   --gap-xl: 1.5rem;
 
   /* Padding */
   --padding-none: 0;
   --padding-xs: 0.5rem;
-  --padding-sm: 0.5rem 0.75rem;
-  --padding-md: 1.5rem;
+  --padding-sm: 0.625rem;
+  --padding-md: 0.75rem;
+  --padding-l: 2rem;
   --padding-lg: 2.5rem;
 
   /* Margin */
@@ -104,7 +117,10 @@
   --width-auto: auto;
 
   /* Border radius */
+  --border-radius-xs: 0.25rem;
   --border-radius-sm: 0.375rem;
+  --border-radius-lg: 0.75rem;
+  --border-radius-2x1: 1.5rem;
 
   /* Border width*/
   --border-width-thin: 1px;
