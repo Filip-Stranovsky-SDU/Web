@@ -28,7 +28,11 @@
   --purple-500: #6366f1;
 
   /* Orange*/
+  --orange-400: #fb923c;
   --orange-500: #f97316;
+  --orange-600: #ea580c;
+  --orange-700: #c2410c;
+  --orange-800: #9a3412;
 
   /* Red*/
   --red-400: #f87171;
@@ -53,11 +57,16 @@
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
 
   /* Weights */
   --font-weight-thin: 100;
   --font-weight-normal: 400;
   --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
 
   /* Letter spacing */
   --letter-spacing-wide: 0.05em;
@@ -92,7 +101,6 @@
   --width-full: 100%;
   --width-content: 95%;
   --width-input: 16rem;
-  /* 256px */
   --width-auto: auto;
 
   /* Border radius */
@@ -102,4 +110,8 @@
   --border-width-thin: 1px;
   --border-width-medium: 2px;
   --border-width-thick: 3px;
+}
+
+html {
+  font-family: "Inter", serif;
 }
