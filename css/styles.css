@@ -259,6 +259,7 @@ footer {
   margin: 0px 20px;
   background: var(--gray-800);
   border-radius: var(--border-radius-lg);
+  flex: 1 100%;
 }
 
 .scrolloverflow {
@@ -286,8 +287,11 @@ footer {
 }
 
 #indexmain {
+  display: flex;
   flex: 1;
 }
+
+
 
 
 #sidebar-container:has(.sidebar.active)~#main-content,
@@ -358,4 +362,11 @@ footer {
 
 .game-upload-form textarea {
   resize: vertical;
+}
+
+@media (max-width: 786px) {
+  #indexmain {
+    display: flex;
+    flex-direction: column;
+  }
 }

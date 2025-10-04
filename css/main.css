@@ -126,6 +126,11 @@
   --border-width-thin: 1px;
   --border-width-medium: 2px;
   --border-width-thick: 3px;
+
+  /* Transition*/
+  --transition-fast: 0.1s ease;
+  --transition-normal: 0.2s ease;
+  --transition-slow: 0.3s ease;
 }
 
 html {
